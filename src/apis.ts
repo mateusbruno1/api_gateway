@@ -1,12 +1,12 @@
 const config = [
   {
-  url: 'https://backend.plenitudeigrejabatista.com.br',
-  route: 'EVENTS'
+    url: 'https://backend.plenitudeigrejabatista.com.br',
+    route: 'EVENTS'
   },
   {
-  url: 'https://backend.plenitudeigrejabatista.com.br',
-  route: 'CELL'
+    url: 'https://backend.plenitudeigrejabatista.com.br',
+    route: 'CELL'
   }
-  ]
-  
-  export default config
+]
+
+export default config

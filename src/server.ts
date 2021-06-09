@@ -10,11 +10,11 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 apis.forEach(({ url, route }) => {
-app.use(`/${route}`, httpProxy(url, { timeout: 3000 }))
+  app.use(`/${route}`, httpProxy(url, { timeout: 3000 }))
 })
 
 app.get('/', (req, res) => {
-return res.json('Application is runnig')
+  return res.json('Application is runnig')
 })
 
 app.listen(3000, () => console.log('Application is running'))
